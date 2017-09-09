@@ -1,0 +1,20 @@
+#device     fstype     mount point        [device2] [length=]
+
+/sbl1       emmc       /dev/block/bootdevice/by-name/sbl1
+/rpm        emmc       /dev/block/bootdevice/by-name/rpm
+/tz         emmc       /dev/block/bootdevice/by-name/tz
+/persist    ext4       /dev/block/bootdevice/by-name/persist
+/emmcboot   emmc       /dev/block/bootdevice/by-name/aboot
+/modem      emmc       /dev/block/bootdevice/by-name/modem
+/persistent emmc       /dev/block/bootdevice/by-name/config
+/echarge    emmc       /dev/block/bootdevice/by-name/echarge
+/splash     emmc       /dev/block/bootdevice/by-name/splash
+/carrier    ext4       /dev/block/bootdevice/by-name/carrier
+/system     ext4       /dev/block/bootdevice/by-name/system
+/cache      ext4       /dev/block/bootdevice/by-name/cache
+/data       ext4       /dev/block/bootdevice/by-name/userdata      length=-16384
+/boot       emmc       /dev/block/bootdevice/by-name/boot
+/recovery   emmc       /dev/block/bootdevice/by-name/recovery
+/misc       emmc       /dev/block/bootdevice/by-name/misc
+
+/external_sd     vfat       /dev/block/mmcblk1p1       flags=display="Micro SDcard";storage;wipeingui;removable
