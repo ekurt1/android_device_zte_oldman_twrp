@@ -1,11 +1,8 @@
 
 LOCAL_PATH := device/zte/oldman
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/zte/oldman/kernel
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+PRODUCT_COPY_FILES += \
+		device/zte/oldman/twrp.fstab:recovery/root/etc/twrp.fstab
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernel:kernel \
