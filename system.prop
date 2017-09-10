@@ -1,6 +1,6 @@
 ro.chipname=MSM8909
 ro.arch=msm8909
-ro.lcd_brightness=150
+ro.lcd_brightness=127
 ro.sf.lcd_density=116
 ro.hardware.keystore=msm8909
 persist.sys.usb.config=mtp,adb
