@@ -1,1 +1,1 @@
-add_lunch_combo omni_oldman-eng
+add_lunch_combo omni_oldman-userdebug

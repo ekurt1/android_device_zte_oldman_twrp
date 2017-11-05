@@ -2,7 +2,7 @@
 LOCAL_PATH := device/zte/oldman
 
 PRODUCT_COPY_FILES += \
-		device/zte/oldman/twrp.fstab:recovery/root/etc/twrp.fstab
+		device/zte/oldman/recovery.fstab:recovery/root/etc/twrp.fstab
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernel:kernel \
