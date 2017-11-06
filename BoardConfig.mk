@@ -21,7 +21,9 @@ TARGET_NO_BOOTLOADER := true
 
 #Kernel
 # --We have kernel source, so no need for prebuilt--
-TARGET_PREBUILT_KERNEL := device/zte/oldman/kernel
+#TARGET_PREBUILT_KERNEL := device/zte/oldman/kernel
+TARGET_KERNEL_SOURCE := kernel/zte/oldman
+TARGET_KERNEL_CONFIG := msm8909-oldman-perf_defconfig
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
